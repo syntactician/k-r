@@ -40,16 +40,16 @@ int main()
 
 	for(i = 1; i < 10; ++i)
 	{
-		if(i < 9) {
-			printf("%d  ", i);
-		} else {
-			printf("%d+ ", i);
-		}
+		printf("%d", i);
+
+		if(i == 9)
+			printf("+ ", i);
+		else
+			printf("  ", i);
 
 		for(n = 0; n < lengths[i]; n = n + (longest*longest / (25*lengths[i])))
-		{
 			printf("-");
-		}
+
 		printf("\n");
 	}
 }
