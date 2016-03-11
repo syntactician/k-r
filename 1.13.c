@@ -5,8 +5,9 @@
 
 int main()
 {
-	int c, i, n, length, state;
+	int c, i, length, state;
 	int lengths[10];
+	float n, longest;
 
 	state = OUT;
 	length = 0;
@@ -32,6 +33,11 @@ int main()
 		}
 	}
 
+	for(i = 1, longest = 0; i < 10; ++i)
+		if(lengths[i] > longest)
+			longest = lengths[i];
+
+
 	for(i = 1; i < 10; ++i)
 	{
 		if(i < 9) {
@@ -40,7 +46,7 @@ int main()
 			printf("%d+ ", i);
 		}
 
-		for(n = 1; n < lengths[i]; n = n + 5)
+		for(n = 0; n < lengths[i]; n = n + (longest*longest / (25*lengths[i])))
 		{
 			printf("-");
 		}
