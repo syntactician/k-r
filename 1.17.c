@@ -17,14 +17,6 @@ int getLine(char s[], int lim)
 	return i;
 }
 
-void printLine(char s[])
-{
-	int i, c;
-
-	for(i = 0; (c = s[i]) != '\0'; ++i)
-		putchar(c);
-}
-
 int main()
 {
 	int len;
@@ -32,7 +24,7 @@ int main()
 
 	while((len = getLine(line, MAXLINE)) > 0)
 		if(len > 80) {
-			printLine(line);
+			printf("%s\n", line);
 		}
 
 	return 0;
