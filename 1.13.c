@@ -43,9 +43,9 @@ int main()
 		printf("%d", i);
 
 		if(i == 9)
-			printf("+ ", i);
+			printf("+ ");
 		else
-			printf("  ", i);
+			printf("  ");
 
 		for(n = 0; n < lengths[i]; n = n + (longest*longest / (25*lengths[i])))
 			printf("-");
