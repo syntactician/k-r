@@ -2,6 +2,21 @@
 
 #define MAXLINE 1000
 
+int getLine(char s[], int lim);
+void reverseStr(char s[]);
+
+int main()
+{
+	int len;
+	char line[MAXLINE];
+
+	while((len = getLine(line, MAXLINE)) > 0)
+	{
+		reverseStr(line);
+		printf("%s\n", line);
+	}
+}
+
 int getLine(char s[], int lim)
 {
 	int c, i;
@@ -33,17 +48,5 @@ void reverseStr(char s[])
 		c = s[n];
 		s[n] = s[i];
 		s[i] = c;
-	}
-}
-
-int main()
-{
-	int len;
-	char line[MAXLINE];
-
-	while((len = getLine(line, MAXLINE)) > 0)
-	{
-		reverseStr(line);
-		printf("%s\n", line);
 	}
 }
