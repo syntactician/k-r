@@ -30,6 +30,7 @@ int getLine(char s[], int lim)
 
 	for(i = 0; i < lim-1 && (c = getchar()) != EOF && c != '\n'; ++i)
 		s[i] = c;
+
 	if(c == '\n')
 	{
 		s[i] = c;
@@ -37,8 +38,7 @@ int getLine(char s[], int lim)
 	}
 	s[i] = '\0';
 
-	--i;
-	if(s[i] == '\n')
+	if(s[i-1] != '\n')
 		while((c = getchar()) != EOF && c != '\n')
 			++i;
 
