@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	ensure that (getchar() != EOF) is always 0 or 1
+ */
+
 int main()
 {
 	int c;

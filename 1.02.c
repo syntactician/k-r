@@ -1,6 +1,10 @@
 #include <stdio.h>
 
+/*
+ *	use escape codes
+ */
+
 int main()
 {
-	printf("\tHello, world\?\n");
+	printf("\thello, world\?\n");
 }

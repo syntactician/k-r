@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	cat, reducing multiple consecutive blanks to single blanks
+ */
+
 int main()
 {
 	int c, lc;

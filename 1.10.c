@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	cat, showing escape codes
+ */
+
 int main()
 {
 	int c;

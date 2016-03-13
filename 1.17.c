@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	print all input lines longer than 80 char (or their first 1000 char)
+ */
+
 #define MAXLINE 1000
 
 int getLine(char s[], int lim);

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- * replace the following loop without AND or OR
- *	for(i = 0; i < lim-1 && (c=getchar()) != '\n' && c != EOF; ++i)
- *		s[i] = c;
+ *	replace the following loop without AND or OR
+ *		for(i = 0; i < lim-1 && (c=getchar()) != '\n' && c != EOF; ++i)
+ *			s[i] = c;
  */
 
 #define MAXLINE 1000

@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/*
+ *	print histogram of character frequency in iput
+ *
+ *	TODO:
+ *		- print vertically
+ *		- print for individual characters?
+ */
+
 int main()
 {
 	int c, i;

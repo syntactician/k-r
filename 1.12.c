@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	cat, with one word per line
+ */
+
 #define IN  1
 #define OUT 0
 

@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/*
+ *	print histogram of the length of words in input
+ *
+ *	TODO: print vertically
+ */
+
 #define IN  1
 #define OUT 0
 

@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	cat, reversing each line with a function
+ */
+
 #define MAXLINE 1000
 
 int getLine(char s[], int lim);

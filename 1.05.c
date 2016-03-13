@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/*
+ *	print temperatures from highest to lowest
+ */
+
 #define LOWER 0
 #define UPPER 300
 #define STEP  20

@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ *	print length of longest line
+ *	print first 1000 characters of that line
+ */
+
 #define MAXLINE 1000
 
 int getLine(char s[], int lim);
