@@ -11,7 +11,6 @@
 int main(void)
 {
 	int i, c, lim;
-	/* char s[MAXLINE]; */
 	i = 0;
 	lim = MAXLINE;
 
