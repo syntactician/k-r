@@ -11,7 +11,6 @@ int main()
 		lengths[i] = 0;
 
 	while((c = getchar()) != EOF)
-	{
 		if(c == ' ' || c == '\n' || c == '\t')
 			lengths[0]++;
 		else if(c >= '0' && c <= '9')
@@ -20,7 +19,6 @@ int main()
 			lengths[2]++;
 		else
 			lengths[3]++;
-	}
 
 	for(i = 1, longest = 0; i < 4;  ++i)
 		if(lengths[i] > longest)
@@ -29,21 +27,8 @@ int main()
 	for(i = 0; i < 4; ++i)
 	{
 		printf("%s ", types[i]);
-
 		for(n = 0; n < lengths[i]; n = n + (longest*longest) / (25*lengths[i]))
 			printf("-");
-		/* if(i < 9) { */
-		/* 	printf("%d  ", i); */
-		/* } else { */
-		/* 	printf("%d+ ", i); */
-		/* } */
-
-		/* for(n = 0; n < lengths[i]; n = n + (longest*longest / (25*lengths[i]))) */
-		/* { */
-		/* 	printf("-"); */
-		/* } */
-		/* printf("\n"); */
-		/* printf("%s: %d\n", types[i], lengths[i]); */
 		printf("\n");
 	}
 }
